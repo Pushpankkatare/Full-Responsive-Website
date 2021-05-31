@@ -1,0 +1,1 @@
+This is my attempt of a fully responsive website using HTML CSS JavaScriptz
