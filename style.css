@@ -7,11 +7,6 @@
     scroll-behavior: smooth;
 }
 
-/* body{
-    color: white;
-    background-color: rgb(26, 25, 25);
-    font-family: monospace;
-} */
 
 .navbar{
     background-color: #131313;
@@ -88,7 +83,7 @@
 }
 
 .button{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,16 +98,36 @@
     background: linear-gradient(to right, #fcb045,#fd1d1d, #833ab4) ;
     color: #fff;
     transition: all .3s ease;
+   
 }
-
 
 .navbar_link:hover{
     color: #9518fc;
+    transition: all 0.3s ease;
 }
-
-
 
 .button:hover
 {
-    background:white;
+    background: linear-gradient(to left, #fcb045,#fd1d1d, #833ab4) ;
+}
+
+
+@media screen and (max-width: 960px){
+    .navbar_container{
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding:0;
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin:0;
+        width: 100%;
+    }
 }
